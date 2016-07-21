@@ -5,6 +5,9 @@ This is a project with a goal to make a Word Level Text generation using keras o
 The code is based on the sample text generation character level code provided as a sample example at
 https://github.com/fchollet/keras/blob/master/examples/lstm_text_generation.py
 
+I tried training it on chapters of The Game of Thrones (individually, because of memory constraints), seems
+coherent, please try and give me feedback.
+
 #Read This:
 Since the code is done at word level instead of character level, it needs more epochs than the character 
 level text generation counter part, as well as much more memory because it has to be trained on thousands
