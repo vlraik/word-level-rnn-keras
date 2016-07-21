@@ -6,4 +6,5 @@ setup(
     packages=['wordlevelrnn',],
     license='	',
     long_description=open('README.md').read(),
+    author='Vrishabh Lakhani'
 )
