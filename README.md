@@ -5,6 +5,17 @@ This is a project with a goal to make a Word Level Text generation using keras o
 The code is based on the sample text generation character level code provided as a sample example at
 https://github.com/fchollet/keras/blob/master/examples/lstm_text_generation.py
 
+#Requirements:
+Theano: https://github.com/Theano/Theano
+Keras: https://github.com/fchollet/keras
+
+#Usage:
+To train a dataset, put the txt file inside the dataset directory, and run the script, additionally you can tweak the batchsize as per your machine's memory contraint
+
+#Future Update:
+I'll add an option to have a choice between different RNN models
+
+#Sample Testing:
 I tried training it on chapters of The Game of Thrones (individually, because of memory constraints), seems
 coherent, please try and give me feedback.
 
