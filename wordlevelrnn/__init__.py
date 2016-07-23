@@ -10,7 +10,6 @@ import random
 import sys
 import os
 
-#path = get_file('rj.txt')
 path = "datasets/got.txt"
 
 try: 
@@ -24,17 +23,12 @@ print('corpus length:', len(text))
 chars = set(text)
 words = set(open('datasets/got.txt').read().lower().split())
 
-'''for i in words:
-    print("words",i)'''
-#print(text)
 print("chars:",type(chars))
 print("words",type(words))
 print("total number of unique words",len(words))
 print("total number of unique chars", len(chars))
-#print("chars:", chars)
-#print("words:", words)
 
-print('total words:', len(words))
+
 word_indices = dict((c, i) for i, c in enumerate(words))
 indices_word = dict((i, c) for i, c in enumerate(words))
 
@@ -49,11 +43,10 @@ next_words = []
 next_words= []
 sentences1 = []
 list_words = []
-sentences1=text.lower().split('%%') #this is not being used, for now
+
 sentences2=[]
 list_words=text.lower().split()
 
-print("sentences1:",type(sentences1), "list_words", type(list_words))
 
 for i in range(0,len(list_words)-maxlen, step):
     sentences2 = ' '.join(list_words[i: i + maxlen])
